@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+
+    <style>
+        :root {
+            --primary-color: tomato;
+            --secondary-color: blue;
+            --font-size: 20px;
+        }
+
+
+
+        h1 {
+            color: var(--primary-color);
+        }
+
+        h5 {
+            background-color: var(--secondary-color);
+        }
+
+        .box {
+            border: 2px solid var(--secondary-color);
+        }
+
+        .box p {
+            font-size: var(--font-size);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My custom Properties</h1>
+    <h5>Also commonly khows as css variable</h5>
+    <div class="box">
+        <h3>I am doing something</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere repudiandae harum esse, maxime quaerat
+            similique! Iste, ipsam necessitatibus. Quasi ea commodi illo dolorem cumque, adipisci explicabo dolore eum
+            saepe totam?</p>
+    </div>
+</body>
+
+</html>
